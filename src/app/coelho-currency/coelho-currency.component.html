@@ -1,14 +1,14 @@
 <table border="1">
-  <tr>
-    <th>Data e hora</th>
-    <th>BRL</th>
-    <th>USD</th>
-    <th>EUR</th>
-  </tr>
-  <tr *ngFor="let currency of wallet.currencies">
-    <td>{{ currency.timeISO | date : "dd/MM/yyyy HH:mm" }}</td>
-    <td>R$ {{ currency.BRL }}</td>
-    <td>US$ {{ currency.USD }}</td>
-    <td>€ {{ currency.EUR }}</td>
-  </tr>
+	<tr>
+		<th>Data e hora</th>
+		<th>BRL</th>
+		<th>USD</th>
+		<th>EUR</th>
+	</tr>
+	<tr *ngFor="let currency of wallet.currencies">
+		<td>{{ currency.timeISO | date : "dd/MM/yyyy HH:mm" }}</td>
+		<td>R$ {{ currency.BRL }}</td>
+		<td>US$ {{ currency.USD }}</td>
+		<td>€ {{ currency.EUR }}</td>
+	</tr>
 </table>
