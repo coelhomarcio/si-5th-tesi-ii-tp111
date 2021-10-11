@@ -1,0 +1,9 @@
+<p>Saldo {{ wallet.btcBalance }} BTC</p>
+<hr>
+<input #input type="number">
+<button (click)="wallet.addBTCBalance(+input.value)">+</button>
+<button (click)="wallet.removeBTCBalance(+input.value)">-</button>
+<hr>
+<p>R$ {{ wallet.brlBalance() }}</p>
+<p>US$ {{ wallet.usdBalance() }}</p>
+<p>€ {{ wallet.eurBalance() }}</p>

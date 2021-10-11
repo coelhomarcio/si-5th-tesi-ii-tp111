@@ -1,0 +1,25 @@
+<header>
+  <h1>Wallet BTC (sem CSS)</h1>
+  <span *ngIf="wallet.isUp()" style="color: green;">&uparrow;</span>
+  <span *ngIf="wallet.isDown()" style="color: red;">&downarrow;</span>
+  <hr>
+  <nav>
+    <a routerLink="currency">Cotações</a>
+    <hr>
+    <a routerLink="wallet">Carteira</a>
+  </nav>
+</header>
+<hr>
+<router-outlet></router-outlet>
+<hr>
+<footer>
+  <p>Marcio Rodrigues Paiva Coelho<br>
+    <small>RA 0050831921015</small><br>
+    <a href="https://github.com/coelhomarcio" target="_blank">GitHub</a>
+  </p>
+  <p>
+    <small>
+      <a href="https://old.coindesk.com/price/bitcoin" target="_blank">Powered by CoinDesk</a>
+    </small>
+  </p>
+</footer>
